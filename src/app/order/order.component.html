@@ -1,0 +1,38 @@
+<div class="container">
+    <form [formGroup]="formValue">
+        <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" formControlName="name" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Email address</label>
+            <input type="email" class="form-control" formControlName="email" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Mobile</label>
+            <input type="text" class="form-control" formControlName="mobile" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Address</label>
+            <input type="text" class="form-control" formControlName="address" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Food Name</label>
+            <input type="text" class="form-control" formControlName="fname" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Price (BDT)</label>
+            <input type="text" class="form-control" formControlName="price" #price required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Quantity (Kg/Meal)</label>
+            <input type="text" class="form-control" formControlName="qnt" #qnt
+                (keyup)="multiplication(price.value, qnt.value)" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Total (BDT)</label>
+            <input type="text" class="form-control" formControlName="total" required>
+        </div>
+        <button type="submit" class="btn btn-primary" (click)="addOrder()">Order Now</button>
+    </form>
+</div>

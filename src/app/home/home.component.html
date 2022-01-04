@@ -1,0 +1,56 @@
+<!-- Main Section -->
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <h2>Sholo Ana Bangali</h2>
+            <p>We are Bengli and as a Bengli we are known by the saying</p>
+            <blockquote>"মাছে ভাতে বাঙালি"</blockquote>
+            <p>And we are fond of our traditional food.Rice and fish are traditional favorites with vegetables and
+                lentils
+                also forming a part of our staple diet.</p>
+            <p>The staples of Bangladeshi cuisine are rice and, to a lesser extent, roti (whole wheat flatbread). These
+                are
+                generally consumed with vegetable, poultry, beef, fish, goat, and mutton curries. Ducks, koel, and
+                pigeons are
+                also eaten in the rural areas. Our country also has to offer a host of vegetables, such as a variety of
+                gourds,
+                roots and tubers, leafy green vegetables, succulent stalks, citrons and limes, green and purple
+                eggplants, okra,
+                red onions, banana tree stems and flowers, etc. </p>
+            <p>And we <b>16 Ana Banglai</b> team are here to serve you with our traditional food item in a suitable
+                prize. You
+                can order our food online or you can come to our restaurant to enjoy the delicious Bangali food.</p>
+        </div>
+        <div class="col-4">
+            <form [formGroup]="feedbackForm" (ngSubmit)="postFeedback()">
+                <div class="mb-3">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-control" formControlName="name">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email address</label>
+                    <input type="email" class="form-control" formControlName="email">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Feedback</label>
+                    <input type="text" class="form-control" formControlName="feedback">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <router-outlet></router-outlet> -->
